@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Transformation</title>
+</head>
+<body>
+    <nav>
+        <div class="btn">
+            <button id="button">Draw</button>
+        </div>
+        <div class="rozmiry">
+            <ul>
+                <li><span>R1 =</span>
+                    <input type="number" id="R1" value="40"  placeholder="<300" min="0" max="300">
+                </li>
+                <li><span>R2 =</span>
+                    <input type="number" id="R2" value="80" placeholder="<400" min="0" max="400">
+                </li>
+                <li><span>A =</span>              
+                    <input type="number" id="A" value="120"  placeholder="<500" min="0" max="500">
+                </li>
+                <li><span>B =</span>
+                    <input type="number" id="B" value="60" placeholder="<200" min="0" max="200">
+                </li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <label for="sitka">Grid</label>
+            <input type="checkbox" id="sitka" name="check" checked="checked"> 
+            <label for="detal">Detail</label>
+            <input type="checkbox" id="detal" name="check">
+        </div>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="600" style="border:1px solid #000;"></canvas>
+        <div class="some_block">
+            <div>
+                <p style="font-size: 18px;"><b>Evklid</b></p>
+                <input style="background: #FFE4C4" type="number" id="X"  placeholder="X">
+                <input style="background: #FFE4C4" type="number" id="Y"  placeholder="Y">
+                <input style="background: #FFE4C4" type="number" id="Angle"  placeholder="Angle">
+                <button style="background: #FFE4C4; color:black;" id="evklidovi">Apply</button>
+                <p style="font-size: 18px;"><b>Aphine</b></p>
+                <input style="background: #98FB98;" type="number" id="X0"  placeholder="X0" >
+                <input style="background: #98FB98;" type="number" id="Y0"  placeholder="Y0" >
+                <input style="background: #98FB98;" type="number" id="Xx"  placeholder="Xx">
+                <button style="background: #98FB98; color:black;" id="afinni">Apply</button>
+                <br>
+                <input style="background: #98FB98;" type="number" id="Yx"  placeholder="Yx" >
+                <input style="background: #98FB98;" type="number" id="Xy"  placeholder="Xy" >
+                <input style="background: #98FB98;" type="number" id="Yy"  placeholder="Yy" >
+                <p style="font-size: 18px;"><b>Projective</b></p>
+                <input style="background: #B0E0E6;" type="number" id="pX0"  placeholder="X0" >
+                <input style="background: #B0E0E6;" type="number" id="pY0"  placeholder="Y0" >
+                <input style="background: #B0E0E6;" type="number" id="pXx"  placeholder="Xx" >
+                <br>
+                <input style="background: #B0E0E6;" type="number" id="pYx"  placeholder="Yx" >
+                <input style="background: #B0E0E6;" type="number" id="pXy"  placeholder="Xy" >
+                <input style="background: #B0E0E6;" type="number" id="pYy"  placeholder="Yy" >
+                <button style="background: #B0E0E6; color:black;" id="proektyvni">Apply</button>
+                <br>
+                <input style="background: #B0E0E6;" type="number" id="W0"  placeholder="W0" >
+                <input style="background: #B0E0E6;" type="number" id="Wx"  placeholder="Wx" >
+                <input style="background: #B0E0E6;" type="number" id="Wy"  placeholder="Wy" >
+            </div>
+            <div id="myDetail"></div>
+        </div>
+    </section>
+</body>
+</html>
